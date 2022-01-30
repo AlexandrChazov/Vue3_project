@@ -1,11 +1,13 @@
 <template>
   <div class="app">
+
     <PostForm
       @createPost="addPost"/> <!-- подписываемся на событие "createPost" и если оно произойдёт вызываем ф-цию "addPost" -->
     <PostList
       :posts="posts"
       @deletePost="deletePost"/> <!-- ":posts" это короткая запись "v-bind:posts="posts"" -->
   </div>
+
 </template>
 
 <script>
