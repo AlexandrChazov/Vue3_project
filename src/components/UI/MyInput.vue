@@ -9,7 +9,7 @@
   export default {
     name: "my-input",
     props: {
-      modelValue: {
+        modelValue: {
         type: [String, Number],
         required: true
       },

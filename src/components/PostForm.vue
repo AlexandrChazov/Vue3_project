@@ -4,7 +4,7 @@
     <my-input
             type="text"
             placeholder="Title"
-            v-model="post.title"/>
+            v-model="post.title"/> <!-- после "v-model" мы не указали с каким пропсом сделать двусторонее связываниеб а значит связываение будет с "modelValue" -->
       <!--  :value="post.title"
             @input="post.title = $event.target.value"> -->
     <my-input
@@ -12,11 +12,11 @@
             placeholder="Body"
             v-model="post.body"
     />
-    <MyButton
+    <my-button
         class="btn"
         @click="addPost">
       Send
-    </MyButton>
+    </my-button>
   </form>
 </template>
 
